@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/static/style.css">
+
+<div class="container">
+  <h2>Messages</h2>
+  <table border="1">
+    <tr><th>ID</th><th>Name</th><th>Email</th><th>Message</th></tr>
+    {% for m in submissions %}
+    <tr>
+      <td>{{ m[0] }}</td>
+      <td>{{ m[1] }}</td>
+      <td>{{ m[2] }}</td>
+      <td>{{ m[3] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
