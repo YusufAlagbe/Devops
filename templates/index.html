@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Engineer Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
-<header>
-    <h1>DevOps Engineer Portfolio</h1>
-</header>
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">DevOps • Cloud • Automation</div>
+            <h1>DevOps Engineer Portfolio</h1>
+            <p class="hero-subtext">
+                Building reliable systems with cloud automation, CI/CD, monitoring, and infrastructure as code.
+            </p>
+        </div>
+    </header>
 
+    <main class="container">
 
-<div class="container">
+        <section class="intro-panel">
+            <div class="intro-text">
+                <h2>Hello, My name is Yusuf Alagbe</h2>
+                <p>
+                    A passionate DevOps Engineer specializing in cloud automation, CI/CD, monitoring, and infrastructure as code.
+                </p>
+            </div>
 
-    <div class="card">
-        <h2>Hello, My name is Yusuf Alagbe</h2>
-        <p>A passionate DevOps Engineer specializing in cloud automation, CI/CD, monitoring, and infrastructure as code.</p>
-        <ul>
-            <li>AWS | Docker | Kubernetes | Terraform | Ansible</li>
-            <li>CI/CD: GitHub Actions, Jenkins</li>
-            <li>Monitoring: Grafana, Prometheus, CloudWatch</li>
-        </ul>
-    </div>
+            <div class="skills-list">
+                <div class="skill-item">AWS | Docker | Kubernetes | Terraform | Ansible</div>
+                <div class="skill-item">CI/CD: GitHub Actions, Jenkins</div>
+                <div class="skill-item">Monitoring: Grafana, Prometheus, CloudWatch</div>
+            </div>
+        </section>
 
-    <div class="card">
-        <h2>Download My Resume</h2>
-        <p>Click below to download my updated DevOps resume.</p>
-        <a href="/static/resume.pdf" download>
-            <button>Download Resume</button>
-        </a>
-    </div>
+        <section class="cards-grid">
 
-    <div class="card">
-        <h2>Contact Me</h2>
-        <p>Have a question or opportunity? Send me a message.</p>
-        <a href="/contact"><button>Contact Form</button></a>
-    </div>
+            <div class="card">
+                <div class="card-icon">📄</div>
+                <h2>Download My Resume</h2>
+                <p>Click below to download my updated DevOps resume.</p>
+                <a href="/static/resume.pdf" download class="btn btn-primary">Download Resume</a>
+            </div>
 
-    <div class="card">
-        <h2>Admin – View Submissions</h2>
-        <a href="/submissions"><button>View Messages</button></a>
-    </div>
+            <div class="card">
+                <div class="card-icon">✉️</div>
+                <h2>Contact Me</h2>
+                <p>Have a question or opportunity? Send me a message.</p>
+                <a href="/contact" class="btn btn-primary">Contact Form</a>
+            </div>
 
-</div>
+            <div class="card">
+                <div class="card-icon">📥</div>
+                <h2>Admin – View Submissions</h2>
+                <p>Access messages submitted through the contact form.</p>
+                <a href="/submissions" class="btn btn-dark">View Messages</a>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
